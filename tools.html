@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>site</title>
+<script>
+function calcul(){
+var h=document.getElementById("AA").value;
+var t=Math.sqrt(((2*h)/9.8));
+var v=Math.sqrt((19.6*h));
+document.getElementById("CC").value=t;
+document.getElementById("DD").value=v;
+}
+</script>
+<style>
+img{display:block;
+ margin-left:auto;
+   margin-right:auto;
+   border:20px solid #02457A;
+
+   }
+body{background-color:pink;}
+h3{color:#02457A;}
+
+</style>
+</head>
+<body>
+
+<img src="tool.jpg"></img><br><br>
+<h3>Veuillez choisir une hauteur aprés appliquer les relations et voir le résultat .</h3>
+Entrez la hauteur(h):<input id="AA" type="text"/>
+<button onclick="calcul()" >Calculer</button><br><br>
+Durée jusqu´au sol(t):<input id="CC" /><br><br>
+vitesse jusqu´au sol(t):<input id="DD"/>
+
+</body>
+</html>
